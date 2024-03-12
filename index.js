@@ -19,7 +19,7 @@ const port = 5000;
 const RAZORPAY_API_KEY = "rzp_test_cAH0tlxoBYQzoL";
 const RAZORPAY_SECRET_KEY = "MHU6WLikqViBs1QSpVm0S9Pa";
 // Use the cors middleware
-app.use(cors());
+app.use(cors("*"));
 // Middleware to parse incoming JSON
 // app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
